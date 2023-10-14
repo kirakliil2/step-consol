@@ -255,39 +255,6 @@ a {
 	display: block;
 	text-align: center;
 }
-@media (max-width: 777px) {
-	.menu-icon {
-		display: block;
-		position: relative;
-		z-index: 10;
-	}
-
-	.header-logo {
-		position: relative;
-		z-index: 10;
-	}
-
-	.header-menu-body {
-		position: fixed;
-		top: -100%;
-		left: 0;
-		z-index: 9;
-		height: 100%;
-		width: 100%;
-		background: #037231;
-		display: block;
-		transition: all 0.5s ease;
-	}
-
-	.header-menu-body.active {
-		top: 0;
-	}
-
-	.header-search {
-		position: relative;
-		z-index: 9;
-	}
-}
 
 .footer {
 	padding: 58px 0 0 0;
@@ -295,6 +262,7 @@ a {
 }
 .footer-content {
 	display: flex;
+	flex-wrap: wrap;
 }
 .footer-block {
 	flex: 0 0 33.333%;
@@ -327,4 +295,141 @@ a {
 	font-size: 16px;
 	line-height: 19px;
 	color: #ffffff;
+}
+.duty {
+	min-height: 100vh;
+	background: url(../images/home-duty-bg.jpg) no-repeat center / cover;
+}
+.container-duty {
+	min-height: 100vh;
+}
+.duty-content {
+	min-height: 100vh;
+	max-width: 305px;
+	margin: 0 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+.duty-title {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 400;
+}
+.duty-subtitle {
+	color: #fff;
+	font-size: 14px;
+	margin: 0 0 130px 0;
+}
+.duty-row {
+	display: flex;
+	gap: 10px;
+}
+.duty-button {
+	padding: 9px 20px;
+}
+
+.Trailer {
+	background: radial-gradient(
+		100% 100% at 50% 0%,
+		rgba(76, 80, 82, 0.1) 0%,
+		rgba(95, 98, 101, 0.1) 100%
+	);
+	padding: 50px 0 40px 0;
+}
+
+.Trailer-title {
+	color: #435766;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.Trailer-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+.Trailer-button {
+	padding: 15px 20px;
+	margin: 0 0 40px 0;
+}
+
+.Trailer-video {
+	display: block;
+	width: 800px;
+	height: 450px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+@media (max-width: 850px) {
+	.Trailer-video {
+		width: 90%;
+	}
+}
+
+@media (max-width: 777px) {
+	.menu-icon {
+		display: block;
+		position: relative;
+		z-index: 10;
+		margin: 0 0 0 20px;
+	}
+
+	.header-logo {
+		position: relative;
+		z-index: 10;
+	}
+
+	.header-menu-body {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		z-index: 9;
+		height: 100%;
+		width: 100%;
+		background: #037231;
+		display: block;
+		transition: all 0.5s ease;
+		padding: 150px 0 0 0;
+	}
+
+	.header-menu-body.active {
+		top: 0;
+	}
+
+	.header-menu-item {
+		text-align: center;
+		margin: 0 0 30px 0;
+	}
+
+	.header-menu-link {
+		font-size: 35px;
+		color: #ffffff;
+	}
+
+	.header-search {
+		position: relative;
+		z-index: 9;
+	}
+}
+
+@media (max-width: 420px) {
+	.header-search {
+		max-width: 100px;
+	}
+
+	.home-title {
+		font-size: 60px;
+	}
+
+	.home-subtitle {
+		margin: 0 0 50px 0;
+	}
 }
